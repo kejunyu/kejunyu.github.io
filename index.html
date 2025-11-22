@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>标贴墙</title>
+    <style>
+        /* 页面背景 */
+        body {
+            background-color: #f8d9e8;
+            font-family: 微软雅黑;
+            margin: 0;
+            padding: 20px;
+        }
+        /* 标题 */
+        h1 {
+            text-align: center;
+            color: #fff;
+            font-size: 36px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        /* 卡片容器 */
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        /* 单张卡片 */
+        .card {
+            background-color: #e8f4fc;
+            width: 200px;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transform: rotate(-2deg); /* 轻微倾斜，模拟便签效果 */
+        }
+        /* 卡片内的彩色圆点 */
+        .a {
+            display: flex;
+            gap: 5px;
+            margin-bottom: 10px;
+        }
+        .circle {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+        .c1 { background-color: #ff6b6b; }
+        .c2 { background-color: #feca57; }
+        .c3 { background-color: #48dbfb; }
+        /* 卡片文字 */
+        .text {
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 8px;
+        }
+        .b {
+            font-size: 16px;
+            font-weight: bold;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>标贴墙</h1>
+    <div class="card-container">
+        <!-- 第1张卡片 -->
+        <div class="card">
+            <div class="a">
+                <div class="circle c1"></div>
+                <div class="circle c2"></div>
+                <div class="circle c3"></div>
+            </div>
+            <div class="text">温馨提示</div>
+            <div class="b">所有的烦恼都消失</div>
+        </div>
+
+        <!-- 第2张卡片（可复制增加更多） -->
+        <div class="card" style="transform: rotate(1deg);">
+            <div class="a">
+                <div class="circle c1"></div>
+                <div class="circle c2"></div>
+                <div class="circle c3"></div>
+            </div>
+            <div class="text">今日计划</div>
+            <div class="b">完成HTML学习</div>
+        </div>
+
+        <!-- 第3张卡片 -->
+        <div class="card" style="transform: rotate(-3deg);">
+            <div class="a">
+                <div class="circle c1"></div>
+                <div class="circle c2"></div>
+                <div class="circle c3"></div>
+            </div>
+            <div class="text">小目标</div>
+            <div class="b">坚持每天运动</div>
+        </div>
+    </div>
+</body>
+</html>
